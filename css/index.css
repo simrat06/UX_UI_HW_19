@@ -119,6 +119,10 @@ footer{
     vertical-align: top;
     align-items: center;  
 }
+footer img{
+  height: 50px;
+
+}
 button {
   position: relative;
   text-transform: uppercase;
