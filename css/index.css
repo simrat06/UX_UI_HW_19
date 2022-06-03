@@ -3,7 +3,8 @@ html{
 }
 li{
     display: inline-block;
-    padding: 2%;
+    padding-bottom: 8px;;
+    padding-right: 25px;
 }
 .logo{
 
@@ -76,12 +77,13 @@ ul{
   align-items: center;
  
 }
-img{
+.flexItem img{
   height: 350px;
-  width: 0 auto;
+  width: 463px;
   display: flex;
   margin: 10px;
-  padding: 1;
+  padding: 1%;
+  border: 5px solid #555;
   border-radius: 5%;
   
   
@@ -93,7 +95,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: 1%;
-  margin-right: 10px;
+  
 }
 h1{
   text-align: center;
@@ -101,6 +103,7 @@ h1{
 h2, h3{
   padding: 1%;
   margin: 20px;
+  text-align: left;
 }
 p1{
   display: flex;
@@ -110,9 +113,18 @@ p1{
   font-size: 16px;
   padding: 1%;
   margin: 20px;
+  text-align: left;
+}
+.mySkills img{
+    height: 350px;
+    width: 463px;
+    border: 5px solid #555;
+    border-radius: 5%;
+    align-items: center;
 }
 button{
   margin: 20px;
+ 
 }
 footer{
     background-color: #D4CFCB;
@@ -120,14 +132,15 @@ footer{
     align-items: center;
 }
 .navFoot{
-    width: 100%;
-    padding: 1%;
-    vertical-align: top;
+    width: 80%;
     align-items: center;  
+  
 }
 footer img{
   height: 50px;
-
+  width: 50px;
+ 
+  
 
 }
 
@@ -142,6 +155,7 @@ button {
   z-index: 1;
   overflow: hidden;
   background-color: white;
+  
 }
 
 button::before,
@@ -188,6 +202,7 @@ button:hover::after {
 /*<!-- My Skills Section Constructed using CSS Grid --!>*/
 .skillsGrid{
   display: grid;
+  align-self: center;
 }
 .userResearch {
   grid-area: left;
@@ -202,39 +217,28 @@ button:hover::after {
   display: grid;
   grid-template-areas: 'left left middle middle right right';
   grid-template-rows: 33% 33% 33%;
- grid-template-columns: auto;
- 
+ grid-template-columns: 200px auto 200px;
+
+}
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  
 }
 p2{
  
   display: flex;
-  width: auto;
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 1%;
   margin: 20px;
+  text-align: left;
+  
 }
 h4{
   margin: 20px;
   text-decoration: underline;
   text-align: center;
-}
-/*Media Query*/
-@media only screen and (max-width: 600px){
-  .flexContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .userResearch {
-    grid-area: top;
-  }
-  .userInterface{
-    grid-area: center;
-  }
-  .webDesign{
-    grid-area: bottom;
-  }
-  .grid-container{
-    grid-template-rows: 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "top" "center" "bottom";
-  }
 }
